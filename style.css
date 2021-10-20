@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.flex{
+    display: flex;
+}
+.container{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.btn{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 160px;
+    border-radius: 20px;
+    padding: 8px 6px;
+    text-align: center;
+    background-color: rgb(0, 36, 136);
+}
+header{
+    background: #122A57;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+header div.container{
+    justify-content: space-between;
+    padding: 0 2%;
+}
+header div.titulo_empresa{
+    width: 40%;
+}
+header div.titulo_empresa h1{
+    color: white;
+    font-size: 2.6em;
+    text-align: center;
+}
+header ul{
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header ul li{
+    margin: 0 20px;
+    flex: 1;
+    text-align: center;
+}
+
+header ul li a{
+    padding: 4px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+header ul li a:hover{
+    border-bottom: 1px solid rgb(95, 177, 255);
+}
+/*FIM DO ESTILO DO HEADER*/
+section.apresentacao{
+    height: 90vh;
+    padding: 0 2%;
+}
+section.apresentacao div.container{
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.apresentacao .container{
+    max-width: 1024px;
+    margin-top: 40px;
+}
+div.desc_apresentacao{
+    flex-direction: column;
+}
+div.desc_apresentacao h1{
+    font-size: 3em;
+    color: rgb(0, 36, 136);
+    margin-bottom: 10px;
+}
+
+div.img_apresentacao img{
+    max-width: 100%;
+}
+/*FIM DA SECTION DE APRSENTAÇÃO*/
+section.quem_somos .container{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+}
+div.img_quem_somos img{
+    max-width: 100%;
+}
+div.content_quem_somos{
+    padding: 20px;
+}
+div.content_quem_somos h2{
+    font-size: 2.5em;
+    color: rgb(0, 36, 136);
+    margin-bottom: 20px;
+    border-left: 6px solid rgb(0, 0, 163);
+    padding: 0 5px;
+}
+div.content_quem_somos p{
+    margin-bottom: 12px;
+    max-width: 500px;
+    text-align: justify;
+}
+/*FIM ESTILO DA SECTION "QUEM SOMOS"*/
+
+section.services{
+    margin-top: 20px;
+    padding: 10px 1%;
+    background: #122A57;
+    height: 60vh;
+}
+section.services .container{
+    flex-direction: column;
+    text-align: center;
+}
+
+div.title_services h2{
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+div.content_services{
+    padding: 10px 1%;
+    justify-content: space-between;
+}
+
+div.content_services p{
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+div.content_services a{
+    color: rgb(0, 14, 107);
+    background-color: white;
+    width: 220px;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+/*FIM SESSAO "SERVICES"*/
+
+section.planos{
+    margin-top: 40px;
+    height: 40vh;
+}
+section.planos div.container{
+    flex-direction: column;
+}
+section.planos h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+div.list_planos{
+    align-items: flex-end;
+    justify-content: space-around;
+}
+div.item_planos{
+    flex: 1;
+    border: 4px solid rgb(0, 2, 102);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+    padding: 10px;
+    margin: 0 20px;
+    max-width: 250px;
+}
+div.item_planos h3{
+    margin-bottom: 30px;
+    font-size: 2.3em;
+    text-align: center;
+    border-bottom: 3px solid rgb(24, 36, 107);
+}
+div.item_planos h3::after{
+    height: 6px;
+    width: 150px;
+    background-color: rgb(24, 36, 107);
+    position: relative;
+}
+div.item_planos ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: square;
+    list-style-position: inside;
+    margin-bottom: 30px;
+}
+div.item_planos a{
+    margin: 30px auto;
+}
+/*FIM ESTILO DA SESSAO DE SERVIÇOS*/
+
+footer{
+    margin-top: 40px;
+    background: #122A57;
+}
+footer div.container{
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    color: white;
+    font-size: 1.1em;
+    margin-top: 12px;
+}
+/*FIM DO ESTILO DO FOOTER*/
+
+/*MOBILE*/
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    header{
+        height: auto;
+    }
+    header .container{
+    }
+    header div.titulo_empresa{
+        width: 100%;
+        text-align: center;
+    }
+    
+    header ul{
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    header ul li{
+        margin-bottom: 10px;
+    }
+    /*Services*/
+    section.services{
+        height: auto;
+    }
+    div.content_services{
+        flex-direction: column;
+    }
+    div.content_services div{
+        margin: 10px 0;
+    }
+    div.title_services h2{
+        margin: 0;
+    }
+
+    /*LIST_PLANOS*/
+    section.planos{
+        padding: 0;
+        height: auto;
+    }
+    section.planos h1{
+        margin: 0;
+    }
+    div.list_planos{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    div.item_planos{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 580px){
+    header div.container{
+        padding: 0;
+    }
+    header div.titulo_empresa h1{
+        font-size: 2.5em;
+    }
+}
